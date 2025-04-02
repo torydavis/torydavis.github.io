@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Article Listing</title>
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 40px;
+            text-align: center;
+        }
+
+       
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        /* "///////////"*/
+        .divider {
+            font-size: 18px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        .articles {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .article-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /*  Rectangle for images */
+        .article-container img {
+            width: 200px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Article Details */
+        .article-details {
+            text-align: left;
+            flex: 1;
+        }
+
+        /* Article Titles */
+        .article-details strong {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Date Styling */
+        .article-details p {
+            font-size: 14px;
+            color: gray;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        .author-info {
+            font-size: 14px;
+            margin-top: 30px;
+            color: rgb(55, 65, 81);
+        }
+
+        .author-info a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>We release interesting articles about technology</h1>
+    <div class="divider">///////////</div>
+
+    <div class="articles">
+        <div class="article-container">
+            <img src="resources/photo_1.png" alt="Cloud Computing">
+            <div class="article-details">
+                <strong>Power of Cloud Computing: A Guide to Scalable Solutions</strong>
+                <p>November 12, 2024</p>
+            </div>
+        </div>
+
+        <div class="article-container">
+            <img src="resources/photo_3.png" alt="Future of AI Guide">
+            <div class="article-details">
+                <strong>Future of AI</strong>
+                <p>November 12, 2024</p>
+            </div>
+        </div>
+
+        <div class="article-container">
+            <img src="resources/photo_2.png" alt="5G Impact">
+            <div class="article-details">
+                <strong>The Impact of 5G on Business</strong>
+                <p>November 12, 2024</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="author-info">
+        Coded by <a href="#">Your Name Here</a> | Challenge by
+        <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+    </div>
+
+</body>
+</html>
